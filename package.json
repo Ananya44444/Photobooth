@@ -1,0 +1,17 @@
+{
+  "name": "photobooth",
+  "version": "1.0.0",
+  "description": "A photobooth web application that creates photo strips",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

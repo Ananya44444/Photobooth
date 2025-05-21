@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photobooth</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500&display=swap">
+</head>
+<body>
+  <div class="container">
+    <main>
+      <h1 class="title">Photobooth</h1>
+      
+      <div class="buttons">
+        <button class="btn" id="cameraBtn">Use Camera</button>
+        <button class="btn" id="uploadBtn">Upload Photos</button>
+      </div>
+
+      <div id="camera-container" class="hidden">
+        <div id="photo-preview"></div>
+        
+        <div id="camera-container-wrapper" class="camera-container-wrapper">
+          <video id="video" autoplay playsinline></video>
+        </div>
+        
+        <canvas id="canvas" class="hidden"></canvas>
+        
+        <div class="photo-buttons">
+          <button id="capture-btn" class="btn">Take 3 Photos</button>
+          <button id="close-camera-btn" class="btn">Close</button>
+        </div>
+      </div>
+
+      <div id="strip-container" class="hidden">
+        <canvas id="strip-canvas"></canvas>
+        <div class="photo-buttons">
+          <button id="save-strip-btn" class="btn">Save Strip</button>
+          <button id="retake-strip-btn" class="btn">Retake Photos</button>
+        </div>
+      </div>
+
+      <div id="upload-container" class="hidden">
+        <p>Select 3 images to create a photobooth strip:</p>
+        <input type="file" id="file-input" accept="image/*" multiple>
+        <div id="preview-container"></div>
+        <button id="close-upload-btn" class="btn">Close</button>
+      </div>
+      
+      <div id="status-message"></div>
+    </main>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

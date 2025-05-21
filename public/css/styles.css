@@ -1,0 +1,64 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins';
+  background: #225e9e;
+  color: #0a0d10;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container, .camera-container-wrapper, #camera-container, #upload-container, #strip-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+}
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+  color: #e8e6e4;
+  margin-bottom: 40px;
+}
+.buttons, .photo-buttons, .photo-preview {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.btn {
+  background: #95bbc2;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.btn:hover { background: #8a7a66; }
+#video, #canvas, #strip-canvas {
+  width: 100%;
+  background: #e5e0d5;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+#preview-container img, .photo-preview img, .photo-preview .empty-frame {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.photo-preview .empty-frame {
+  background: #d4d3d1;
+  border: 3px solid #806953;
+} 
+.hidden { display: none; }
